@@ -1,0 +1,57 @@
+.docs{
+color:( #e1ecf7, #aecbeb, #83b0e1, #71a5de, #1f487e, #bac5d0 )
+}
+
+img { 
+    max-width:100%;
+    height:auto;
+}
+
+.section__subtitle {
+display: block;
+}
+.container{
+    max-width:968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    display: grid;
+    gap:1.5rem;
+}
+
+
+Heya ! I'm Navaneeth Jayachander, a frontend focused web developer 
+ and designer from Goa, India. I have done my B.E in Electronics and Telecommunication engineering. I am an active learner,
+always looking for new challenges and opportunities to grow as a developer. I create visually appealing,
+responsive and user-friendly interfaces to optimize website performance and enhance user experiences.
+
+
+#Skills{
+    html 90
+    css 80
+    js 60
+    reactjs 75
+
+    figma 75
+    adobexd 60
+    canva 85
+
+    Design intuitive interfaces. Create engaging user experiences. Optimize visual aesthetics.
+    I create user experiences (UX) and user interfaces (UI) that are visually appealing and 
+    intuitive to improve website usability and engagement.
+    I integrate both design and programming to create user-friendly interfaces for websites 
+    and web applications.
+}
+
+{
+    I am a skilled and passionate web developer with experience in creating visually 
+    appealing and user-friendly websites. I have a strong understanding of 
+    design and a keen eye for detail. I am proficient in 
+    HTML, CSS, JavaScript, ReactJS as well as design software 
+    such as Figma, Adobe XD, etc.
+}
+
+
+
+

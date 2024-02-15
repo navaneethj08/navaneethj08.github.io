@@ -1,0 +1,236 @@
+
+#About{
+    margin-top:100px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt-header{
+    display: flex;
+    color:#1f487e;
+    font-size: 45px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:-350px;
+}
+
+.abt-info{
+    display: grid;
+    max-width:80vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.blob-img{
+    width:800px;
+    position: relative;
+    margin-left: -8%;
+    margin-top: 70px;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.3));
+}
+
+.abt-img{
+    height:650px;
+    justify-self: center;
+    filter: brightness(0.9);
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4));
+    border-bottom: 10px solid #1f487e;
+    border-radius: 50%;
+    position:absolute;
+    left:16%;
+}
+
+
+.abt-desc{
+    padding-top: 10vh;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 5%;
+}
+
+.contact-btn{
+    padding:12px;
+    padding-right: 14px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #1f487e;
+    background: transparent;
+    color:#1f487e;
+    transition: 0.2s all;
+}
+.contact-btn:hover{
+    background: #1f487e;
+    color:#e1ecf7; 
+}
+
+.contact-btn:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+    /* Lowering the shadow */ 
+}
+
+
+/* ===== For large devices ===== */
+@media screen and (max-width:1024px){
+   #About{
+        padding-bottom: 0px;
+    }
+    .abt-header{
+        font-size: 35px;
+        margin-bottom: -50px;
+    }
+    .abt-info{
+        max-width:85vw;
+        gap:2%;
+    }
+    .abt-img{
+        height:300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blob-img{
+        margin-top: auto;
+        width:350px;
+        margin-left: 3%;
+    }
+    .abt-desc{
+        padding-top: 5vh;
+        margin-left: -10%;
+        font-size: 12px;
+        margin-right:0%;
+    }
+    .contact-btn{
+        padding: 8px;
+        font-size: 14px;
+        margin-left: -10%;
+    
+    }
+}
+
+/* ===== For medium devices ===== */
+@media screen and (max-width:768px) {
+    #About{
+        padding-bottom: 0px;
+    }
+    .abt-header{
+        font-size: 35px;
+        margin-bottom: -50px;
+    }
+    .abt-info{
+        max-width:85vw;
+        gap:2%;
+    }
+    .abt-img{
+        height:300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blob-img{
+        margin-top: auto;
+        width:350px;
+        margin-left: -8%;
+    }
+    .abt-desc{
+        padding-top: 5vh;
+        margin-left: -10%;
+        font-size: 12px;
+        margin-right:0%;
+    }
+    .contact-btn{
+        padding: 8px;
+        font-size: 14px;
+        margin-left: -10%;
+    
+    }
+}
+
+@media screen and (max-width:576px){
+    
+    .abt-header{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .abt-info{
+        max-width:85vw;
+        grid-template-columns: 1fr;
+    }
+
+    .blob-img{
+        width:300px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        transform: translateY(-25%);;
+    }
+
+    .abt-img{
+        height:250px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        transform: translateY(-100%);
+        left: auto;
+    }
+  
+    .abt-desc{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+        transform: translateY(-200%);
+    }
+    .contact-btn{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        font-size: 15px;
+        transform: translateY(-700%);
+    }
+    
+}
+
+/* ===== For small devices ===== */
+@media screen and (max-width:480px){
+    .abt-info{
+        max-width:85vw;
+        grid-template-columns: 1fr;
+        gap:10%;
+    }
+    .blob-img{
+        width:300px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        transform: translateY(-20%);
+    }
+    .abt-img{
+        height:250px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        left: auto;
+        transform: translateY(-100%);
+    }
+    .abt-desc{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        transform: translateY(-110%);
+
+    }
+    .contact-btn{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        font-size: 15px;
+        transform: translateY(-600%);
+    }
+}
+

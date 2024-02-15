@@ -1,0 +1,327 @@
+
+#Skills{
+    margin-top:-60px;
+    overflow: hidden;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-header{
+    display: flex;
+    color:#1f487e;
+    font-size: 45px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    margin-bottom: 50px;
+}
+.skills-subheader{
+    display: flex;
+    margin: 0 10vw;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #7e8184;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    column-gap: 50px;
+    justify-content: center;
+}
+
+/* ////////// Frontend box and Uiux box //////////  */
+
+.skills-content{
+    border: 1px solid #1f487e;
+    background: #e1ecf7;
+    box-shadow:  20px 20px 60px #c8d2dc, -20px -20px 60px #faffff;    
+    padding:30px;
+    border-radius: 20px;
+}
+.skills-content:hover {
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    background-color: aliceblue;
+}
+
+.skills-title{
+    text-align: center;
+}
+
+.skills-box {
+    margin-top:30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:30px;
+}
+
+.skills-group{
+    flex:100%;
+    max-width:100%;
+}
+
+.skills-data{
+    display:flex;
+    justify-content: space-between;
+}
+
+.skills-data p{
+    animation: showText 0.5s 1s linear forwards;
+}
+
+.progress-line{
+    margin-top: 7px;
+    height:10px;
+    width:100%;
+    background-color: #bac5d0;
+    border-radius:50px;
+    position:relative;
+    animation-delay: 0.1s;
+}
+
+.progress-line span{
+    display: block;
+    position:relative;
+    height:100%;
+    width:95%;
+    border-radius: 5px;
+    background-color: #71a5de;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity:0;
+}
+
+@keyframes progress {
+    0%{
+        width:0;
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+/* ////////// Logos Slider //////////  */
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.logos{
+    margin:60px 0;
+    overflow: hidden;
+    padding:10px 0;
+    white-space: nowrap;
+    position: relative;
+    box-shadow: 1px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.logos:before, .logos:after {
+    position: absolute;
+    top:0;
+    width:25%;
+    height:100%;
+    content: "";
+    z-index: 2;
+}
+.logos:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), white);
+
+}
+.logos:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
+
+}
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.logos-slide{
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.logos-slide img {
+    height:80px;
+    margin:0 40px;
+}
+.logos-slide img:hover {
+    transform: scale(1.5);
+}
+
+
+/* ////////// What I do //////////  */
+
+.sub-header{
+    display: flex;
+    font-size: 35px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.sub-skills{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin:0 auto;
+    gap:10%;
+    padding:0 100px;
+}
+
+.designer, .developer,
+.designer-txt, .developer-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.designer, .developer{
+    color: #1f487e;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.designer-txt, .developer-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: #7e8184;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.skills-img{
+    width:300px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===== For large devices ===== */
+@media screen and (max-width:1024px){
+    .skills-header{
+        font-size: 35px;
+    }
+
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        column-gap: 50px;
+        justify-content: center;
+    }
+    .logos-slide img {
+        height:60px;
+        margin:0 30px;
+    }
+    .sub-header{
+        display: flex;
+        font-size: 30px;
+        font-weight: 800;
+        justify-content: center;
+        align-items: center;
+    }
+     
+    .designer, .developer{
+        font-size: 25px;
+    }
+    
+    .designer-txt, .developer-txt {
+        font-size: 12px;
+    }
+
+ }
+ 
+ /* ===== For medium devices ===== */
+ @media screen and (max-width:768px) {
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(1, 450px);
+        row-gap: 60px;
+        justify-content: center;
+    }
+    .skills-img{
+        width:280px;
+    }
+
+ }
+ 
+ @media screen and (max-width:576px){
+    .skills-header{
+        font-size: 30px;
+    }   
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(1, 400px);
+        row-gap: 60px;
+        justify-content: center;
+    }
+    .sub-skills{
+        max-width: 60%;
+        gap: 0%;
+        margin:0 auto;
+    }
+      
+    .designer, .developer{
+        font-size: 22px;
+    }
+    
+    .designer-txt, .developer-txt {
+        font-size: 10px;
+    }
+    .skills-img{
+        width:250px;
+    }
+ }
+ 
+ /* ===== For small devices ===== */
+ @media screen and (max-width:480px){
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        row-gap: 50px;
+        justify-content: center;
+    }
+    .logos-slide img {
+        height:50px;
+        margin:0 25px;
+    }
+    .sub-skills{
+        width: 50vw;
+        gap: 0%;
+        margin:0 auto;
+    }
+      
+    .designer, .developer{
+        font-size: 20px;
+    }
+    
+    .designer-txt, .developer-txt {
+        font-size: 10px;
+    }
+    .skills-img{
+        width:160px;
+        margin:0 -20px;
+    }
+    
+ }
+ 
